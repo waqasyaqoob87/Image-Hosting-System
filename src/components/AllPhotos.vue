@@ -55,6 +55,10 @@
   </v-app>
 </template>
 <style>
+
+
+
+
 .v-card--reveal {
   align-items: center;
   bottom: 0;
