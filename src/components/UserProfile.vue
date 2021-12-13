@@ -127,9 +127,7 @@
 </template>
 <script>
 import axios from "axios";
-import { mapActions, mapGetters } from "vuex";
 export default {
-  data: () => ({}),
   data() {
     return {
       show3: false,
@@ -156,7 +154,7 @@ export default {
     };
   },
   methods: {
-    convertImg(event) {},
+    convertImg() {},
     updateprofile() {
       var base64String = "";
       const reader = new FileReader();

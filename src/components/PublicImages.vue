@@ -47,7 +47,6 @@
               </template>
             </v-img>
             <div></div>
-            <a style="text-decoration: none">{{ item.name }}</a>
           </v-col>
         </v-row>
       </div>
@@ -80,8 +79,8 @@ export default {
       })
       .then((response) => {
         console.log(response.data.message.image);
-
         this.userimage = response.data.message.image;
+        alert("User Updated Successfully")
       })
       .catch(function (error) {
         alert(error);

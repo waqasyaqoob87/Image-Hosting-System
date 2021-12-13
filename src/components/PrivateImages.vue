@@ -47,7 +47,6 @@
               </template>
             </v-img>
             <div></div>
-            <a style="text-decoration: none">{{ item.name }}</a>
           </v-col>
         </v-row>
       </div>

@@ -133,7 +133,7 @@ export default {
       cpasword: "",
       Age: "",
       img: "",
-      img_url : "",
+      img_url: "",
       emailRules: [
         (v) => !!v || "E-mail is required",
         (v) =>
@@ -151,23 +151,20 @@ export default {
     ...mapGetters(["getRegistrations"]),
   },
   methods: {
-      convertImg(event) {
-        console.log(event)
+    convertImg(event) {
+      console.log(event);
 
-        let get = this
-        const reader = new FileReader()
-        reader.addEventListener(
-          'load',
-          function () {
-            get.img = reader.result
-          },
-          false
-        )
-        reader.readAsDataURL(event)
-      },
-    // convertImg(){
-    //   this.img_url=URL.createObjectURL(this.img)
-    // },
+      let get = this;
+      const reader = new FileReader();
+      reader.addEventListener(
+        "load",
+        function () {
+          get.img = reader.result;
+        },
+        false
+      );
+      reader.readAsDataURL(event);
+    },
     ...mapActions(["Registrations"]),
     newRegister() {
       this.signupLoader = true;
@@ -197,15 +194,3 @@ export default {
   },
 };
 </script>
-<style scoped>
-.addSpaceRight {
-  margin-right: 250px;
-}
-.reducewidth {
-  width: 198px;
-}
-/* .photofield{
-  border: 2px solid red;
-  height: 10%;
-} */
-</style>

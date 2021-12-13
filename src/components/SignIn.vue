@@ -46,7 +46,7 @@
             :error-messages="errorMessages"
           ></v-text-field>
             <!--Forgot Email Link-->
-          <router-link to="/ForgetPassword"><a class="blue--text font-weight-bold ml-6 mb-2" href="">Forgot Email? </a></router-link>
+          <router-link to="/ForgetPassword"><a class="blue--text font-weight-bold ml-6 mb-2" href="">Forgot Password? </a></router-link>
           <br>
           <br>
           <br>
@@ -77,11 +77,6 @@ import { mapActions, mapGetters } from "vuex";
       Email:'',
       pasword:'',
       name: null,
-      address: null,
-      city: null,
-      state: null,
-      zip: null,
-      country: null,
       formHasErrors: false,
       show3: false,
 emailRules: [
@@ -129,8 +124,4 @@ emailRules: [
 a{
   text-decoration: none;
 }
-/* .background{
-  background: url("@/assets/cam.jpg");
-  background-size: cover;
-} */
 </style>
